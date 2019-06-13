@@ -28,10 +28,10 @@
               "src/favicon.ico"
             ],
             "styles": [
-              "src/styles.scss",
-              "src/app_styles.css"
+              "src/styles.scss"
             ],
             "scripts": [
+              "node_modules/jquery/dist/jquery.min.js"
             ]
           },
           "configurations": {
@@ -45,6 +45,13 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "5mb",
+                  "maximumError": "5mb"
+                }
+              ],
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -84,7 +91,8 @@
               "node_modules/jquery/dist/jquery.min.js"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/font-awesome/css/font-awesome.css"
             ],
             "assets": [
               "src/assets",
@@ -136,7 +144,7 @@
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
-      "styleext": "css"
+      "styleext": "scss"
     },
     "@schematics/angular:directive": {
       "prefix": "app"
