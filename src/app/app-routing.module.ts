@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
+                                 
 import { AuthGuard, ReversalAuthGuard, DeactivateGuard } from 'app/services';
 import { MainComponent } from 'app/layouts/main/main.component';
 import { CategoryComponent } from 'app/containers/category/category.component';

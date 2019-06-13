@@ -2,8 +2,8 @@
 @import 'romantic-purple';
 
 // Uncomment if you apply a theme you like
-// $app-theme: $elegant-black-theme;
-$app-theme: $romantic-purple-theme;
+ $app-theme: $elegant-black-theme;
+//$app-theme: $romantic-purple-theme;
 
 // Global variables
 $app-theme-is-dark: map-get($app-theme, is-dark);
